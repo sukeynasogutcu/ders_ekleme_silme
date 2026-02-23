@@ -1,16 +1,30 @@
-# odev7
+# Derslerim - Flutter Ders Ekleme-Silme Uygulama Örneği
+Derslerim, kullanıcıların takip ettikleri dersleri kolayca ekleyebileceği, listeleyebileceği ve yönetebileceği modern tasarımlı bir mobil uygulamadır. Flutter ile geliştirilmiş olup, dinamik liste yapısı ve şık "Dark Mode" arayüzü ile dikkat çeker.
+# Özellikler
+Uygulama, temel CRUD (Oluşturma, Okuma, Silme) işlemlerini destekler ve şu özellikleri barındırır:
 
-A new Flutter project.
+Dinamik Ders Ekleme: "Yeni Ders Ekle" bölümünden ders ismini yazarak listeye anında ekleme yapabilirsiniz.
 
-## Getting Started
+Detaylı Görünüm: ExpansionTile sayesinde her dersin üzerine tıklandığında dersle ilgili alt menü ve detaylar açılır.
 
-This project is a starting point for a Flutter application.
+Kaydırarak Silme (Swipe to Delete): Dismissible widget'ı ile dersleri sola kaydırarak hızlıca silebilirsiniz.
 
-A few resources to get you started if this is your first Flutter project:
+Modern Arayüz: Koyu tema (Dark Mode) desteği ve Card yapısı ile temiz bir kullanıcı deneyimi sunar.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Boş Durum Kontrolü: Listede hiç ders kalmadığında kullanıcıyı yönlendiren bir "Boş Durum" ekranı görünür.
+# Kullanılan Teknolojiler ve Widget'lar
+Uygulama geliştirilirken Flutter'ın sunduğu güçlü araçlar kullanılmıştır:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+State Management: Uygulama içi durum yönetimi StatefulWidget ve setState ile sağlanmıştır.
+
+Tasarım: Material Design, Custom Theme ve Google Fonts (Roboto).
+
+Widget Mimarisi:
+
+ListView.builder: Performanslı liste yönetimi için.
+
+ExpansionTile: İçerik gizleme/gösterme işlemleri için.
+
+Dismissible: Kaydırma hareketleri için.
+
+TextEditingController: Kullanıcı girdilerini yönetmek için.
